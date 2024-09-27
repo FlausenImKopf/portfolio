@@ -17,12 +17,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
-        {/* <Head>
-          <link rel="icon" href="/favicon.ico" />
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
-        </Head> */}
+    <html className="scroll-smooth" lang="en">
+      <body className={`${inter.className} bg-slate-900`}>
         <Header />
         {children}
       </body>
