@@ -9,13 +9,19 @@ export function About() {
       <div className="absolute -z-10 inset-5 bg-orange-50 rounded">
         {/* <div className="absolute inset-0 bg-gradient-to-l from-slate-900"></div> */}
       </div>
-      <div className="pt-14 flex justify-center items-center">
-        <h2 id="about-headline" className=" text-black text-6xl">
+      <div className="pt-14">
+        <h2 id="about-headline" className=" pl-10 text-black text-6xl">
           About
         </h2>
       </div>
       {/* <div className="relative border-4 border-red-300"> */}
       <div className="absolute inset-x-10 top-36 flex flex-col justify-center items-center space-y-5">
+        <Photocard
+          imgData={codeImg}
+          imgAlt="An image of a heart in red zeros and ones"
+          heading="my toolbox"
+          description="Here's what I use to build and create and play with code."
+        />
         <Photocard
           imgData={bookImg}
           imgAlt="An image of an isle full of books"
@@ -27,12 +33,6 @@ export function About() {
           imgAlt="An image of a dancer in line art with a watercolor backdrop in two shades of blue"
           heading="beyond the code"
           description="Dancer, reader, passionate about continuous learning."
-        />
-        <Photocard
-          imgData={codeImg}
-          imgAlt="An image of a heart in red zeros and ones"
-          heading="my toolbox"
-          description="Here's what I use to build things."
         />
       </div>
       {/* </div> */}
